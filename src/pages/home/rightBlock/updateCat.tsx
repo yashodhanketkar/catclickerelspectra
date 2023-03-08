@@ -1,6 +1,6 @@
 import { doc, updateDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { catRef, db, storage } from "../../../lib/firebase";
+import { db, storage } from "../../../lib/firebase";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
 

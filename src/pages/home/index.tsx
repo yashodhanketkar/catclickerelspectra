@@ -1,4 +1,4 @@
-import { addDoc, doc, getDocs, updateDoc } from "firebase/firestore";
+import { doc, getDocs, updateDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { catRef, db } from "../../lib/firebase";
 import BottomBlock from "./bottomBlock";
@@ -37,7 +37,8 @@ const Home = () => {
       }
     };
     getCats();
-  }, [currentID, cats]);
+    console.log("loading");
+  }, [currentID]);
 
   if (!cats) return <h1>Loading</h1>;
 

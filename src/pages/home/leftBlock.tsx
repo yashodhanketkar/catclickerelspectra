@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 const LeftBlock = (props: any) => {
   const { handleId, cats } = props;
   if (!cats) return <h1>Loading</h1>;
